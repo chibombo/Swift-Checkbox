@@ -56,13 +56,10 @@
 		BF2AE1291FC9149500526072 /* CheckBox */ = {
 			isa = PBXGroup;
 			children = (
+				BF680BF11FCD18030040A584 /* XIBS */,
+				BF680BF01FCD17EA0040A584 /* Resources */,
 				BF2AE1401FC9322E00526072 /* ViewControllers */,
 				BF2AE13C1FC9154800526072 /* Classes */,
-				BF2AE12A1FC9149500526072 /* AppDelegate.swift */,
-				BF2AE12E1FC9149500526072 /* Main.storyboard */,
-				BF2AE1311FC9149500526072 /* Assets.xcassets */,
-				BF2AE1331FC9149500526072 /* LaunchScreen.storyboard */,
-				BF2AE1361FC9149500526072 /* Info.plist */,
 			);
 			path = CheckBox;
 			sourceTree = "<group>";
@@ -70,6 +67,7 @@
 		BF2AE13C1FC9154800526072 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF2AE12A1FC9149500526072 /* AppDelegate.swift */,
 				BF2AE13D1FC9156500526072 /* GARButton.swift */,
 			);
 			path = Classes;
@@ -81,6 +79,24 @@
 				BF2AE1411FC9360900526072 /* testVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF680BF01FCD17EA0040A584 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE1361FC9149500526072 /* Info.plist */,
+				BF2AE1311FC9149500526072 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF680BF11FCD18030040A584 /* XIBS */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE1331FC9149500526072 /* LaunchScreen.storyboard */,
+				BF2AE12E1FC9149500526072 /* Main.storyboard */,
+			);
+			path = XIBS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FVH43E867;
-				INFOPLIST_FILE = CheckBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CheckBox/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chibombo.CheckBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FVH43E867;
-				INFOPLIST_FILE = CheckBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CheckBox/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chibombo.CheckBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
