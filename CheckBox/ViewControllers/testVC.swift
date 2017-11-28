@@ -10,23 +10,25 @@ import UIKit
 
 class testVC: UIViewController {
 
+    //MARK: OUTLETS
     @IBOutlet weak var btnCheckbox: GARButton!
     
-    
+    //MARK: CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         
         btnCheckbox.addTarget(self, action: #selector(toogleCheckbox), for: UIControlEvents.touchUpInside)
         btnCheckbox.setCheckboxType(aType: GARButtonType.withColor)
+        //IT IS NECESARY TURN THE CHECKBOX OFF, JUST FOR NOW.
         btnCheckbox.setCheckboxOff(aType: GARButtonType.withColor)
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-    
+    //MARK: ACTIONS
     @objc func toogleCheckbox()
     {
         

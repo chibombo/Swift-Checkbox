@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// Description: withColor set a color you want to set below, withoutColor set a gray color.
 enum GARButtonType
 {
     case withColor
@@ -38,18 +38,22 @@ class GARButton: UIButton {
         }
         self.setCheckboxOff(aType: type)
     }
+    //MARK: FUNCTIONS
     
+    /// Description: This method set the type of checkbox you want to use, then turn off the checkbox.
+    /// Parameters: GARButtonType
     func setCheckboxType(aType: GARButtonType)
     {
         self.type = aType
         setCheckboxOff(aType: self.type)
     }
-    
+    /// Description: This method just change the boolean value and the checkbox
     func toggleCheckbox()
     {
         isOn == true ? setCheckboxOn(aType: self.type) : setCheckboxOff(aType: self.type)
     }
-    
+    /// Description: This method turn off the checkbox
+    /// Parameters: GARButtonType
     func setCheckboxOff(aType: GARButtonType)
     {
         switch aType {
@@ -72,6 +76,8 @@ class GARButton: UIButton {
         }
         self.isOn = !self.isOn
     }
+    /// Description: This method turn on the checkbox
+    /// Parameters: GARButtonType
     func setCheckboxOn(aType: GARButtonType)
     {
         switch aType {
